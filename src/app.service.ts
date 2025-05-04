@@ -15,7 +15,7 @@ export class AppService {
   async searchAndBroadcastRates(currencyRequired:string): Promise<string> {
     
   
-    console.log("Ejecutando cron");
+    console.log("Ejecutando búsqueda");
   
     // Agregamos la propiedad "euro" en el objeto resultante
     const resultMessage = {
