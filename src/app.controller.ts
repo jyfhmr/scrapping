@@ -7,6 +7,7 @@ export class AppController {
 
   @Post()
   returnCurrency(@Body() body: {currencySearched:string}): Promise<string> {
+    console.log("Petición llegando a controlador:",body)
     return this.appService.searchAndBroadcastRates(body.currencySearched);
   }
 }
