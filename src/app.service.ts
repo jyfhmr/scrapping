@@ -15,6 +15,10 @@ export class AppService {
   async searchAndBroadcastRates(currencyRequired: string): Promise<string> {
     console.log('Ejecutando búsqueda');
 
+    if(currencyRequired === ""){
+      return "Escribe dólar o euro"
+    }
+
     // Agregamos la propiedad "euro" en el objeto resultante
     const resultMessage = {
       conn: 200,
